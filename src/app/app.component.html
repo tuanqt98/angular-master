@@ -1,0 +1,8 @@
+<h2>Hello there!</h2>
+<h3>Your name: {{ user.name }}</h3>
+<p>Your name: {{ user.age }}</p>
+<div *ngIf="user.age >= 13; else no">Bạn có thể xem nội dung PG-13</div>
+<ng-template #no>Bạn không thể xem nội dung này</ng-template>
+<button (click)="user.age = user.age - 1">-</button>
+<span>Age: {{ user.age }}</span>
+<button (click)="user.age = user.age + 1">+</button>
