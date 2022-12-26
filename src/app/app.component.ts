@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-master';
+  isDanger = false;
+  isWarning = false;
+  type = 'password';
+  show = false;
+  handePwd() {
+    if (this.type === 'password') {
+      this.type = 'text';
+      this.show = true;
+    } else {
+      this.type = 'password';
+      this.show = false;
+    }
+  }
 }

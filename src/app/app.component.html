@@ -1,0 +1,5 @@
+<button (click)="isDanger = !isDanger">Toggle Danger</button>
+<button (click)="isWarning = !isWarning">Toggle Danger</button>
+<div class="box" [class.red-border]="isDanger" [class.yellow-background]="isWarning"></div>
+<input [type]="type" />
+<button (click)="handePwd()">show</button>
