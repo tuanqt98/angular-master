@@ -1,0 +1,9 @@
+<!-- Interpolation -->
+<!-- {{expression}} -->
+<p>{{ user.name }} - {{ user.age }}</p>
+<!-- Proprety binding -->
+<input type="text" [value]="user.name" />
+<!-- event binding  -->
+<button (click)="handle()">Click</button>
+<!-- two wway binding  -->
+<input type="text" [(ngModel)]="user.name" value="user.name" />

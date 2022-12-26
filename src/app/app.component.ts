@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-master';
+  user = {
+    name: 'Nguyen Quoc Tuan',
+    age: 25
+  };
+  handle() {
+    this.user.name = 'test';
+  }
 }
